@@ -6,32 +6,6 @@ function pageCount(n, p) {
     var frontFlip = Math.floor(p/2);
   var backFlip = Math.floor((n/2)-frontFlip);
   
-  var result = Math.min(frontFlip, backFlip);
-  return result;
-}
-
-Desafio 2
-Escadaria
-
-function escadaria(n) {
-    // Write your code here
-let simbol = '#';
-let inputLine = '';
-let inputPosition = n-1;
-
-for (let lineIndex = 0; lineIndex < n; lineIndex += 1){
-    for (let columnIndex = 0;columnIndex < n; columnIndex +=1 ){
-        if ( columnIndex < inputPosition){
-            inputLine += ' ';
-        }else{inputLine += simbol 
-        }
-    }
-    console.log(inputLine)
-    inputLine = ''
-    inputPosition -= 1
-}
- 
-}
 
 
 
